@@ -1,0 +1,63 @@
+.add-username {
+  background-color: #eee;
+  color: white;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .add-username {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.username {
+  width: 100%;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+.username:focus {
+  outline: 2px solid orangered;
+}
+.get-repos {
+  background-color: orangered;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.show-repos {
+  background-color: #eee;
+  color: black;
+  margin-top: 20px;
+  padding: 20px;
+}
+.show-repos .repo {
+  display: block;
+  background-color: white;
+  color: rgb(118, 25, 205);
+  padding: 15px 10px;
+  font-size: 18px;
+  margin: 10px 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .show-repos .repo {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.error {
+  color: red;
+}
